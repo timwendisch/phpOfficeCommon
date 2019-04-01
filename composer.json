@@ -1,5 +1,5 @@
 {
-    "name": "wendisch/phpOfficeCommon",
+    "name": "wendisch/phpofficecommon",
     "description": "A base library for extensions wich wants to use phpOffice, needed to rund phpOffice-Parts",
     "type": "typo3-cms-extension",
     "keywords": [
@@ -31,12 +31,12 @@
         }
     },
     "replace": {
-        "phpOfficeCommon": "self.version",
-        "typo3-ter/phpOfficeCommon": "self.version"
+        "phpofficecommon": "self.version",
+        "typo3-ter/phpofficecommon": "self.version"
     },
     "extra": {
         "typo3/cms": {
-            "extension-key": "phpOfficeCommon"
+            "extension-key": "phpofficecommon"
         }
     }
 }
