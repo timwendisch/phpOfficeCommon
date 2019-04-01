@@ -1,0 +1,42 @@
+{
+    "name": "wendisch/phpOfficeCommon",
+    "description": "A base library for extensions wich wants to use phpOffice, needed to rund phpOffice-Parts",
+    "type": "typo3-cms-extension",
+    "keywords": [
+        "TYPO3 CMS",
+        "mvc"
+    ],
+    "license": "LGPL",
+    "authors": [
+        {
+            "name": "Mark Baker"
+        },
+        {
+            "name": "Franck Lefevre",
+            "homepage": "http://rootslabs.net"
+        },
+        {
+            "name": "Tim Wendisch"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^8.7",
+        "php": ">=5.3.0",
+        "pclzip/pclzip": "^2.8"
+    },
+   
+    "autoload": {
+        "psr-4": {
+            "PhpOffice\\Common\\": "Vendor/Common/src/Common"
+        }
+    },
+    "replace": {
+        "phpOfficeCommon": "self.version",
+        "typo3-ter/phpOfficeCommon": "self.version"
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "phpOfficeCommon"
+        }
+    }
+}
